@@ -73,3 +73,7 @@ end
 
 # Generates fake data
 gem 'faker'
+
+# Query language for your API
+gem 'graphql'
+gem "graphiql-rails", group: :development
