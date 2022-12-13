@@ -8,9 +8,19 @@ module Types
     # They will be entry points for queries on your schema.
 
     field :movies, [MovieType]
+    field :movie_categories, [String]
+    field :movie_years, [String]
 
     def movies
       Movie.all
+    end
+
+    def movie_categories
+      Movie::CATEGORIES
+    end
+
+    def movie_years
+      Array(Movie::YEARS)
     end
   end
 end
