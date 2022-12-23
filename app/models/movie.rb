@@ -8,7 +8,7 @@ class Movie < ApplicationRecord
     'Mystery',
     'Romance',
     'Thriller'
-  ]
+  ].freeze
 
   YEARS = 1895..Date.current.year
 

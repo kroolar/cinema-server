@@ -77,3 +77,14 @@ gem 'faker'
 # Query language for your API
 gem 'graphql'
 gem "graphiql-rails", group: :development
+
+# Testing framework
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
+
+# Simple one-liner tests for common Rails functionality
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'simplecov', require: false
+end
